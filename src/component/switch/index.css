@@ -1,0 +1,52 @@
+/* switch */
+.switch {
+  display: flex;
+  height: 56px;
+}
+.switch-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #6082FF;
+  border-right: none;
+}
+.switch-item:first-child{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.switch-item:last-child{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-right: 1px solid #6082FF;
+}
+.switch-item-active {
+  composes: switch-item;
+  background-color: #6082FF;
+  color: #6082FF;
+}
+.switch-item-active .switch-item-title{
+  color: rgba(255,255,255,.5);
+}
+.switch-item-active .switch-item-title-only{
+  color: rgba(255,255,255,1);
+}
+.switch-item-active .switch-item-text{
+  color: rgba(255,255,255,1);
+}
+.switch-item-title {
+  font-size: 12px;
+  color: #A9A9A9;
+}
+.switch-item-title-only {
+  composes: switch-item-title;
+  font-size: 16px;
+}
+.switch-item-text {
+  font-size: 16px;
+  color: #222;
+}
+/* /switch */

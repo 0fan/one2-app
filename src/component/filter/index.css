@@ -1,0 +1,32 @@
+.filter {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 40px;
+  box-shadow: 0px 2px 20px 0px rgba(233,233,233,1);
+}
+.filter-active {
+  composes: filter;
+  box-shadow: none; 
+}
+.filter-item {
+  flex-grow: 1;
+}
+.filter-item:after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  vertical-align: 3px;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-top: 5px solid #D8D8D8;
+}
+.filter-item-active {
+  composes: filter-item;
+}
+.filter-item-active:after {
+  border-top: none;
+  border-bottom: 5px solid #6082FF;
+}

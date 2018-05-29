@@ -1,0 +1,70 @@
+.content {
+  padding: 20px 18px 0;
+}
+.box {
+  margin-bottom: 30px;
+}
+.box-header {
+  border-radius: 4px 4px 0 0;
+  line-height: 42px;
+  padding: 0 18px;
+  border-bottom: 1px dashed #E5E5E5;
+  border-top: 5px solid #6082FF;
+  background: #fff;
+  font-size: 18px;
+  color: #222;
+  font-weight: 500;
+}
+.box-body {
+  background: #fff;
+  padding: 20px 18px 80px;
+  border-radius: 0 0 8px 8px;
+}
+.list {
+  margin: 0;
+  padding: 0;
+}
+.item {
+  margin-top: 35px;
+  display: flex;
+  list-style: none;
+}
+.item:first-child {
+  margin-top: 0;
+}
+.item-key {
+  flex-shrink: 0;
+  width: 90px;
+  font-size: 18px;
+  color: #a9a9a9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.item-value {
+  flex-grow: 1;
+  font-size: 18px;
+  color: #222;
+  font-weight: 500;
+}
+.status {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background: #ddd;
+  margin-right: 8px;
+  vertical-align: -2px;
+}
+.status-error {
+  background: #F43347;
+}
+.status-success {
+  background: #29CCB6;
+}
+.item-sub {
+  color: #A9A9A9;
+  font-size: 14px;
+  margin-left: 38px;
+  vertical-align: 2px;
+}

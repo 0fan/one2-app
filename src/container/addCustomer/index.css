@@ -1,0 +1,243 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  margin: 10px 0;
+}
+.item {
+  display: flex;
+  position: relative;
+  height: 50px;
+  align-items: center;
+  margin-left: 18px;
+  padding-right: 14px;
+}
+.item:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: auto;
+  height: 1px;
+  background-color: #e5e5e5;
+  display: block;
+  z-index: 15;
+  transform-origin: 100% 100%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .item:after {
+    transform: scaleY(0.5);
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+  .item:after {
+    transform: scaleY(0.33);
+  }
+}
+.item:last-child:after {
+  display: none;
+}
+.item-title {
+  width: 20%;
+  flex-shrink: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  color: #A9A9A9;
+}
+.item-required .item-title:after {
+  content: '*';
+  font-size: 18px;
+  color: #F43347;
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: -2px
+}
+.item-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+.item-content > *{
+  flex-grow: 1;
+}
+.item-input {
+  width: 100%;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  background: transparent;
+  vertical-align: middle;
+  text-align: right;
+  font-size: 16px;
+  color: #222;
+  padding-right: 5px;
+}
+.item-static {
+  font-size: 16px;
+  color: #222;
+}
+.item-placeholder {
+  color: #CFD2D9;
+  font-size: 16px;
+}
+.item-after {
+  padding-left: 5px;
+  flex-shrink: 0;
+}
+.item-after-icon {
+  color: #CFD2D9;
+  font-size: 14px;
+}
+.radio {
+  display: inline-flex;
+  align-items: center;
+}
+.item .radio + .radio {
+  margin-left: 28px;
+}
+.item-error {
+  background: #FF6060;
+  padding: 5px 0;
+}
+.item-error li {
+  padding: 0 15px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #fff;
+  text-align: right;
+  list-style: decimal-leading-zero;
+}
+.item-error li:after {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background: #fff;
+  vertical-align: 2px;
+  margin-left: 6px;
+}
+.radio i {
+  width: 19px;
+  height: 19px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-right: 8px;
+  background-image: url('../../asset/img/radio-bg.png');
+}
+.radio-checked.radio-male i {
+  background-image: url('../../asset/img/radio-male.png');
+}
+.radio-checked.radio-female i {
+  background-image: url('../../asset/img/radio-female.png');
+}
+.radio > span {
+  font-size: 16px;
+  color: #222;
+}
+.radio-checked :global(.icon){
+  background: #199DFF;
+  border-color: #199DFF;
+}
+.submit {
+  margin: 36px 18px 40px;
+}
+.add {
+  display: block;
+  text-align: center;
+  margin: 30px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+}
+.add a i {
+  margin-right: 3px;
+}
+.remark-list {
+  margin: 10px 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+.remark-item {
+  padding: 18px 18px 18px 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.remark-item:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: auto;
+  height: 1px;
+  background-color: #e5e5e5;
+  display: block;
+  z-index: 15;
+  transform-origin: 100% 100%; 
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .remark-item:after {
+    transform: scaleY(0.5);
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+  .remark-item:after {
+    transform: scaleY(0.33);
+  }
+}
+.remark-item:last-child:after {
+  display: none;
+}
+.remark-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 36px;
+}
+.remark-item-header-left {
+  font-size: 17px;
+  font-weight: 500;
+  color: #222;
+}
+.remark-item-header-right {
+  color: #CFD2D9;
+  font-size: 13px;
+}
+.remark-item-header-right :global(.icon) {
+  font-size: 13px;
+  margin-left: 5px;
+}
+.remark-item-body {
+  font-size: 14px;
+  color: #A9A9A9;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-top: 6px;
+}
+.error {
+  background: #FF394D;
+  color: #fff;
+  display: flex;
+  padding: 8px 15px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.3;
+}
+.error a {
+  color: #fff;
+  font-size: 12px;
+}

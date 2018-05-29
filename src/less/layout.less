@@ -1,0 +1,45 @@
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1200;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  z-index: 200;
+
+  .am-navbar {
+    height: 100%;
+  }
+
+  &.has-border {
+    .hairline(bottom, #E5E5E5);
+  }
+}
+.content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling:touch;
+
+  &-grey {
+    background: #F3F4F8;
+  }
+
+  &-hasToolbar {
+    bottom: 52px;
+  }
+}
+.header ~ .content {
+  top: 44px;
+}

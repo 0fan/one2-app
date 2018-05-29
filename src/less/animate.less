@@ -1,0 +1,100 @@
+/* slide */
+.slide-enter,
+.slide-appear,
+.slide-enter,
+.slide-appear {
+  opacity: 0;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
+  animation-play-state: paused;
+}
+.slide-leave,
+.slide-leave {
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
+  animation-play-state: paused;
+}
+.slide-enter.slide-enter-active,
+.slide-appear.slide-appear-active,
+.slide-enter.slide-enter-active,
+.slide-appear.slide-appear-active {
+  animation-name: slideIn;
+  animation-play-state: running;
+}
+.slide-leave.slide-leave-active,
+.slide-leave.slide-leave-active {
+  animation-name: slideOut;
+  animation-play-state: running;
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translate(0, 100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes slideOut {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 100%);
+  }
+}
+/* /slide */
+/* slide-left */
+.slide-left-enter,
+.slide-left-appear,
+.slide-left-enter,
+.slide-left-appear {
+  opacity: 0;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
+  animation-play-state: paused;
+}
+.slide-left-leave,
+.slide-left-leave {
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
+  animation-play-state: paused;
+}
+.slide-left-enter.slide-left-enter-active,
+.slide-left-appear.slide-left-appear-active,
+.slide-left-enter.slide-left-enter-active,
+.slide-left-appear.slide-left-appear-active {
+  animation-name: slideLeftIn;
+  animation-play-state: running;
+}
+.slide-left-leave.slide-left-leave-active,
+.slide-left-leave.slide-left-leave-active {
+  animation-name: slideLeftOut;
+  animation-play-state: running;
+}
+@keyframes slideLeftIn {
+  0% {
+    opacity: 0;
+    transform: translate(100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes slideLeftOut {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(100%, 0);
+  }
+}
+/* /slide-left */

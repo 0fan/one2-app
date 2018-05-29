@@ -1,0 +1,125 @@
+.tab {
+  height: 42px;
+  line-height: 42px;
+  display: table;
+  width: 100%;
+  background: #fff;
+  padding: 0 30px;
+}
+.tab-item {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  color: #A9A9A9;
+}
+.tab-item-active {
+  color: #6082FF;
+}
+.tab-item-active:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 24px;
+  margin-left: -12px;
+  background: #6082FF;
+  height: 3px;
+}
+.list {
+  background: #fff;
+}
+.list-item {
+  position: relative;
+  overflow: hidden;
+  padding-left: 18px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.list-item-header {
+  float: left;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  background: #ddd;
+}
+.list-item-content {
+  margin-left: 58px;
+  position: relative;
+  overflow: hidden;
+}
+.list-item-content-main {
+  float: left;
+}
+.list-item-after {
+  float: right;
+}
+.list-item:after {
+  content: '';
+  position: absolute;
+  left: 76px;
+  bottom: 0;
+  right: 0;
+  top: auto;
+  height: 1px;
+  width: 100%;
+  background-color: #e5e5e5;
+  display: block;
+  z-index: 15;
+  transform-origin: 50% 100%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .list-item:after {
+    transform: scaleY(0.5);
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+  .list-item:after {
+    transform: scaleY(0.33);
+  }
+}
+.list-item-after {
+  padding-right: 18px;
+}
+.list-item-title {
+  font-size: 17px;
+  color: #222;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+.list-item-text {
+  font-size: 14px;
+  color: #A9A9A9;
+  line-height: 1.4;
+}
+.list-item-after-title {
+  color: #CFD2D9;
+  font-size: 13px;
+  line-height: 1.38;
+}
+.list-item-after-text {
+  color: #CFD2D9;
+  font-size: 13px;
+  line-height: 1.38;
+}
+.list-item-tag {
+  display: inline-block;
+  font-size: 12px;
+  color: #fff;
+  background: #FF4E60;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 5px;
+  border-radius: 9px 9px 9px 0;
+  vertical-align: 2px;
+}
+.list-item-tag-success {
+  composes: list-item-tag;
+  background: #68D87B;
+}
+.spacer {
+  height: 10px;
+  background: #F3F4F8;
+}

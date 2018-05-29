@@ -1,0 +1,136 @@
+.modal {
+  position: absolute;
+  top: 84px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+.modal-mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,.28);
+}
+.modal-dialog {
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: auto;
+}
+.pick-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pick-list > li {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 27px;
+  font-size: 13px;
+  color: #222;
+  position: relative;
+}
+.pick-list > li:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: auto;
+  top: auto;
+  height: 1px;
+  width: 100%;
+  background-color: #e5e5e5;
+  display: block;
+  z-index: 15;
+  transform-origin: 50% 100%;
+}
+.pick-list > li:last-child:after {
+  display: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .pick-list > li:after {
+    transform: scaleY(0.5);
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+  .pick-list > li:after {
+    transform: scaleY(0.33);
+  }
+}
+.filter {
+  padding: 0 27px 20px;
+}
+.filter-block {
+  margin-bottom: 10px;
+}
+.filter-title {
+  font-size: 13px;
+  color: #222;
+  height: 40px;
+  line-height: 40px;
+}
+.filter-content {
+  position: relative;
+}
+.filter-item {
+  text-align: center;
+  margin-bottom: 8px;
+  float: left;
+  height: 32px;
+  padding: 0 10px;
+  font-size: 13px;
+  line-height: 32px;
+  border-radius: 2px;
+  background: #F0F2F5;
+  color: #777;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.filter-item-active {
+  composes: filter-item;
+
+  color: #fff;
+  background: #6082FF;
+}
+.filter-form-group {
+  display: table;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 2px;
+  background: #F0F2F5;
+}
+.filter-form-group > span {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 13px;
+  color: #777;
+  padding-right: 16px;
+  white-space: nowrap;
+}
+.filter-form-control {
+  display: table-cell;
+}
+.filter-form-control > input[type='text'] {
+  font-size: 13px;
+  border: none;
+  width: 100%;
+  background: transparent;
+  text-align: center;
+}
+.filter-block-spacer {
+  text-align: center;
+  height: 32px;
+  line-height: 32px;
+  font-size: 26px;
+  color: #D8D8D8;
+}
+.filter-footer {
+  margin: 70px 12px 20px;
+}

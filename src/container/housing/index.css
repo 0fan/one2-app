@@ -1,0 +1,49 @@
+.title {
+  font-weight: 500;
+  position: relative;
+}
+
+.title-sub {
+  font-size: 13px;
+  color: #222;
+  vertical-align: 1px;
+  font-weight: normal;
+}
+.list {
+  padding-left: 18px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+}
+.list-item {
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+}
+.list-item:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: auto;
+  top: auto;
+  height: 1px;
+  width: 100%;
+  background-color: #e5e5e5;
+  display: block;
+  z-index: 15;
+  transform-origin: 50% 100%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .list-item:after {
+    transform: scaleY(0.5);
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+  .list-item:after {
+    transform: scaleY(0.33);
+  }
+}

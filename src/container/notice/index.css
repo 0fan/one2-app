@@ -1,0 +1,127 @@
+.list-wrap {
+  padding-bottom: 100px;
+}
+.list {
+  position: relative;
+}
+.list-brief {
+  font-size: 13px;
+  color: #A9A9A9;
+  margin: 20px 0 10px;
+  text-align: center;
+}
+.list-item {
+  background: #fff;
+}
+.list-item-body {
+  padding: 18px 18px 20px;
+}
+.list-item-title {
+  font-size: 18px;
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.list-item-text {
+  font-size: 15px;
+  color: #424242;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.list-item-footer {
+  height: 38px;
+  position: relative;
+  display: table;
+  width: 100%;
+}
+.list-item-footer:after {
+  content: '';
+  position: absolute;
+  left: 18px;
+  top: 0;
+  right: 18px;
+  top: auto;
+  height: 1px;
+  background-color: #e5e5e5;
+  display: block;
+  z-index: 15;
+  transform-origin: 50% 100%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .list-item-footer:after {
+    transform: scaleY(0.5);
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+  .list-item-footer:after {
+    transform: scaleY(0.33);
+  }
+}
+.list-item-footer-right {
+  font-size: 13px;
+  display: table-cell;
+  vertical-align: middle;
+  color: #CFD2D9;
+  text-align: right;
+  padding-right: 18px;
+}
+.list-item-footer-left {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 18px;
+}
+.list-item-footer-avatar {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  overflow: hidden;
+  background: #ddd;
+  margin: 6px 10px 0 0;
+  font-size: 0;
+}
+.list-item-footer-avatar img {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.list-item-footer-name {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.5;
+  color:#A9A9A9;
+  vertical-align: 6px;
+}
+/* detail */
+.detail {
+  padding: 24px 18px;
+}
+.detail-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  line-height: 1.38;
+  margin-bottom: 16px;
+}
+.detail-relative {
+  margin: 16px 0 26px;
+  border-radius: 4px;
+  background: #F3F4F8;
+  font-size: 13px;
+  color: #A9A9A9;
+  padding: 8px 14px;
+  overflow: hidden;
+}
+.detail-relative-author {
+  float: left;
+}
+.detail-relative-date {
+  float: right;
+}
+.detail-content {
+  font-size: 15px;
+  color: #424242;
+  line-height: 1.86;
+}
+/* /detail */

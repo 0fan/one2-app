@@ -1,0 +1,18 @@
+.textarea {
+  margin: 17px 10px;
+  border-radius: 4px;
+  padding: 10px 16px;
+  align-items: flex-start;
+}
+.textarea :global(.am-textarea-control textarea) {
+  font-size: 16px;
+  color: #222;
+}
+.picker {
+  margin: 13px 18px;
+}
+.picker-header {
+  font-size: 13px;
+  color: #A9A9A9;
+  margin-bottom: 20px;
+}

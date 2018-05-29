@@ -1,0 +1,40 @@
+.current-list :global(.am-input-item) {
+  height: 50px;
+}
+
+.current-list :global(.am-list-item){
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.current-list :global(.am-list-body):after {
+  display: none!important;
+}
+
+.current-list input, .current-list textarea {
+  font-size: 16px!important;
+  color: #222222;
+}
+
+.current-list input {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.current-list :global(.am-input-label) {
+  font-size: 16px;
+  color: #A9A9A9;
+}
+
+.current-list input::placeholder, textarea::placeholder {
+  color: #CFD2D9;
+}
+
+.member-item :global(.am-input-extra){
+  color: #6082FF;
+}
+
+.member-item :global(.icon){
+  font-size: 18px;
+}

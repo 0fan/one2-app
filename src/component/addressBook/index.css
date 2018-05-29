@@ -1,0 +1,57 @@
+.my-list :global(.am-list-header){
+  min-height: 48px;
+  padding-left: 18px;
+  font-size: 16px;
+  color: #A9A9A9;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.my-list .list-header-right{
+  position: absolute;
+  right: 18px;
+}
+
+.my-list .list-header-count{
+  color: #6082FF;
+}
+
+.my-item {
+  height: 52px;
+  padding-left: 18px;
+}
+
+.my-item :global(.am-list-line) {
+  padding-right: 18px;
+}
+
+.my-item :global(.am-list-line) :global(.am-list-content) {
+  color: #424242;
+  font-size: 17px;
+}
+
+.count-item :global(.am-list-line) :global(.am-list-extra) {
+  color: #A9A9A9;
+  font-size: 16px;
+}
+
+.start-item :global(.icon){
+  color: #FFD301;
+  font-size: 18px;
+}
+
+.item-space {
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 18px;
+  background: #fff;
+}
+
+.item-space-text {
+  background: #F7F8FB;
+  padding-left: 16px;
+  color: #A9A9A9;
+  width: 100%;
+  height: 100%;
+}
